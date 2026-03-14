@@ -1,0 +1,42 @@
+{
+  "name": "pinia-colada-plugin-broadcast-sync",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "pinia-colada-plugin"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "prepack": "pnpm run build"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.27"
+  },
+  "dependencies": {
+    "@pinia/colada": "^1.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.4",
+    "tsdown": "^0.20.3",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.27"
+  },
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.29.1"
+}

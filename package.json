@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@10.29.1",
+  "devDependencies": {
+    "@antfu/eslint-config": "^7.7.2",
+    "eslint": "^10.0.3",
+    "typescript": "^5.9.3"
+  }
+}
