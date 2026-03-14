@@ -3,8 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@10.29.1",
+  "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "build": "pnpm --filter ./packages/* run build",
+    "release": "bumpp -r --sign"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^7.7.2",
+    "bumpp": "^11.0.0",
     "eslint": "^10.0.3",
     "typescript": "^5.9.3"
   }
